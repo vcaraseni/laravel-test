@@ -1,4 +1,4 @@
-name: Deploy
+name: Main deploy
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   tests:
-    name: Run tests
+    name: Main deploy
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
