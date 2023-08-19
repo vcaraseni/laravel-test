@@ -14,5 +14,3 @@ RUN apt-get update \
         php8.2-xdebug \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
-
-RUN php artisan migrate --force && php artisan admin:install
