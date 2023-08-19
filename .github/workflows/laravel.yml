@@ -32,7 +32,7 @@ jobs:
 
       - name: Run composer
         run: |
-          composer install --no-interaction
+          composer install --no-interaction && php artisan migrate && php artisan admin:install
 
     services:
       mysql:
