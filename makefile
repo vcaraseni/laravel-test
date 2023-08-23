@@ -19,13 +19,13 @@ restart:
 	docker-compose -f docker-compose.yml restart
 
 php:
-	docker-compose -f docker-compose.yml exec example-app-php-fpm-1 bash
+	docker-compose -f docker-compose.yml exec laravel-test_php-fpm_1 bash
 
 nginx:
-	docker-compose -f docker-compose.yml exec example-app-webserver-1 sh
+	docker-compose -f docker-compose.yml exec laravel-test_webserver_1 sh
 
 db:
-	docker-compose -f docker-compose.yml exec example-app-mysql-1 sh
+	docker-compose -f docker-compose.yml exec laravel-test_mysql_1 sh
 
 logs-php:
-	docker-compose -f docker-compose.yml logs -f example-app-php-fpm-1
+	docker-compose -f docker-compose.yml logs -f laravel-test_php-fpm_1
