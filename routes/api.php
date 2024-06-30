@@ -19,4 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('status', static fn() => new JsonResponse(['status' => 'ok']));
+//Route::get('status', static fn() => new JsonResponse(['status' => 'ok']));
